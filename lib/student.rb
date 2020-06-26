@@ -79,6 +79,7 @@ class Student
     s.map do |i|
       self.new_from_db(i)
   end
+end
 
   def self.first_X_students_in_grade_10(x)
     sql = <<-SQL
