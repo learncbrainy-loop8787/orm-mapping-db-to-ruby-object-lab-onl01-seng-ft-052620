@@ -72,7 +72,7 @@ class Student
 
   def self.students_below_12th_grade
     sql = <<-SQL
-       SELECT COUNT(grade > 11) FROM students
+       SELECT COUNT(grade > 10) FROM students
     SQL
     DB[:conn].execute(sql)
     
